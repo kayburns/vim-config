@@ -1,2 +1,2 @@
-with open(fname, 'r') as f:
+with open(fname, 'w') as f:
     f.write(to_write) 
