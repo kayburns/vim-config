@@ -1,0 +1,21 @@
+import argparse
+
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description='conduct analysis on memn2n results'
+    )
+    parser.add_argument(
+        '--arg_name', type=str, default=None, dest='arg_name',
+        help='A helpful message.'
+    )
+    if len(sys.argv) == 1:
+        parser.print_help()
+        sys.exit(1)
+    return parser.parse_args()
+
+def main(args):
+    # TODO
+
+if __name__ == '__main__':
+    args = parse_args()
+    main(args.arg_name)
